@@ -12,21 +12,12 @@ function solveEquation(a, b, c) {
   else if (d > 0) {
     arr = [x1, x2];
   }
-  else {
-    arr = [];
-  }
 
   return arr;
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  if (isNaN(percent)) {
-    return false;
-  }
-  if (isNaN(contribution)) {
-    return false;
-  }
-  if (isNaN(amount)) {
+  if (isNaN(percent) || isNaN(contribution) || isNaN(amount)) {
     return false;
   }
   
